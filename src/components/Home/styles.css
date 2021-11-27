@@ -5,19 +5,22 @@
   background-size: cover;
 }
 .section_nav {
-    position: absolute;
-    top: 50%;
-    left: 25%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5%;
 }
-.section_nav > a {
-  margin-right: 50px;
-}
+
 .section_nav a {
   background-color: #eee;
   color: #1f2738;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 700;
+  margin: 0px 20px;
   padding: 0.8rem 7rem;
   border-radius: 10px;
   transition: 0.4s;
@@ -25,4 +28,16 @@
 .section_nav a:hover {
   background-color: #1f2738;
   color: #f56f36;
+}
+
+@media screen and (max-width: 800px) {
+  .section_nav {
+    flex-direction: column;
+  }
+  .section_nav a {
+    text-align: center;
+    padding: 0.8rem 0px;
+    width: 70%;
+    margin: 20px 0px;
+  }
 }
