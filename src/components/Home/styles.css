@@ -1,33 +1,28 @@
+.back_img {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../assets/home_bg.png");
+  background-size: cover;
+}
 .section_nav {
-    height: 90vh;
-    padding-bottom: 4px;
-    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 25%;
 }
-.section_nav img{
-    width: 100%;
-    height: 100%;
+.section_nav > a {
+  margin-right: 50px;
 }
-
-.section_nav div{
-    width: 20%;
-    position: relative;
-    bottom: 60%;
-    right: -25%;
+.section_nav a {
+  background-color: #eee;
+  color: #1f2738;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.8rem 7rem;
+  border-radius: 10px;
+  transition: 0.4s;
 }
-.section_nav div > a {
-    margin-right: 50px;
-}
-.section_nav div a {
-    background-color: #eee;
-    color: #1F2738;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding: .8rem 7rem;
-    border-radius: 10px;
-    transition: .4s;
-}
-.section_nav div a:hover{
-    background-color: #1F2738;
-    color: #F56F36;
+.section_nav a:hover {
+  background-color: #1f2738;
+  color: #f56f36;
 }

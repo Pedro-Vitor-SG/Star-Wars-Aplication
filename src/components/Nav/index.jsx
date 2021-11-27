@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { Link } from "react-router-dom";
-function Nav({ searchPilots, searchShips }) {
+function Nav() {
   return (
     <nav className="nav_bar">
       <h1>Star Wars catalog</h1>
@@ -13,13 +13,13 @@ function Nav({ searchPilots, searchShips }) {
         </li>
         <span className="line"></span>
         <li>
-          <Link to="/starships" onClick={searchShips}>
+          <Link to="/starships" >
             Starships
           </Link>
         </li>
         <span className="line"></span>
         <li>
-          <Link to="/pilots" onClick={searchPilots}>
+          <Link to="/pilots">
             Pilots
           </Link>
         </li>
